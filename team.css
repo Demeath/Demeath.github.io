@@ -1,0 +1,231 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #ff4500; /* change the background color to orange */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #ffffff; /* change the text color to white */
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid #ffffff; /* change the border color to white on hover */
+}
+
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff; /* change the burger color to white */
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+/* make card and list  */
+/* Team members section */
+.team-members {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.members-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* image above text good alignement */
+.member-card {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.member-img {
+  position: relative;
+}
+
+.member-img img {
+  width: 100%;
+  height: auto;
+}
+
+.member-info {
+padding: 0;
+box-sizing: border-box;
+
+
+
+
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* change width to 30px */
+  height: 30px; /* change height to 30px */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 30px; /* change line-height to 30px */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #3d3d3d;
+}
+
+.social-links a i {
+  font-size: 12px; /* change font-size to 12px */
+  margin-right: 5px; /* add margin-right of 5px */
+}
+
+.social-links a img {
+  width: 30px; /* add width of 30px */
+  height: 30px; /* add height of 30px */
+  margin-right: 5px; /* add margin-right of 5px */
+}
+
+.member-card {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+
+
+.profile-center {
+  margin: 0 auto;
+  width: 100%;
+}
+/* give up */
+.light {
+background: light;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-tems: center;
+cursor: url(ccursors.png), auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+nav li {
+  margin-right: 20px;
+  position: relative; /* Add position relative to the li element */
+}
+
+nav a {
+  color: #ff4500;
+  text-decoration: none;
+  font-size: 16px;
+  display: block; /* Add display block to the anchor tag */
+  padding: 10px; /* Add padding to the anchor tag */
+}
+
+nav a:hover {
+  background-color: #fff; /* Change the background color on hover */
+  color: #ff4500; /* Change the text color on hover */
+}
+
+nav a:before {
+  content: ""; /* Add a pseudo element before the anchor tag */
+  position: absolute; /* Position it absolutely within the li element */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0; /* Set the opacity to 0 so it's invisible */
+  transition: opacity 0.2s ease-in-out; /* Add a transition effect */
+}
+
+nav a:hover:before {
+  opacity: 0.1; /* Change the opacity on hover */
+}
+
+

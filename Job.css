@@ -1,0 +1,242 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #ff4500; /* change the background color to orange */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #ffffff; /* change the text color to white */
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid #ffffff; /* change the border color to white on hover */
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff; /* change the burger color to white */
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Job specification styles */
+.job-specification {
+  max-width: 700px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+
+.job-specification h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.job-specification h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.job-specification p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.job-specification ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.job-specification li {
+  margin-bottom: 10px;
+}
+ 
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4500;
+  color: #ff4500;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ff4500;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #ff4500;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+}
+
+nav li {
+  margin-right: 20px;
+  position: relative; /* Add position relative to the li element */
+}
+
+nav a {
+  color: #ff4500;
+  text-decoration: none;
+  font-size: 16px;
+  display: block; /* Add display block to the anchor tag */
+  padding: 10px; /* Add padding to the anchor tag */
+}
+
+nav a:hover {
+  background-color: #fff; /* Change the background color on hover */
+  color: #ff4500; /* Change the text color on hover */
+}
+
+nav a:before {
+  content: ""; /* Add a pseudo element before the anchor tag */
+  position: absolute; /* Position it absolutely within the li element */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0; /* Set the opacity to 0 so it's invisible */
+  transition: opacity 0.2s ease-in-out; /* Add a transition effect */
+}
+
+nav a:hover:before {
+  opacity: 0.1; /* Change the opacity on hover */
+}
+
+/* finished */
+

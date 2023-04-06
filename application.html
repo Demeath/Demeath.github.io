@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans Web Development Company</title>
+  <link rel="stylesheet" href="application.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Hot Beans Web Development Company">
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Meet the team</a></li>
+      <li><a href="courses.html">Web development courses</a></li>
+      <li><a href="Job.html">Job specification</a></li>
+      <li><a href="application.html">Application form</a></li>
+    </ul>
+<!-- menu  -->
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- Footer section -->
+  <footer>
+    <p>© 2023-2023 Hot Beans Web Development Company</p>
+  </footer>
+
+
+  <!-- Contact form section -->
+<section class="contact">
+  <div class="container">
+    <h2>Contact us</h2>
+  <form action="mailto:tony.abatelive@gmail.com" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+<label for="age">Age:</label>
+<select id="age" name="age">
+  <option value="">-- Select Age --</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="30+">30+</option>
+
+</select>
+
+
+<label for="Experience">Experience:</label>
+<select id="Experience" name="Experience">
+  <option value="">-- Select Experience years --</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11+">11+</option>
+  <option value="15+">15+</option>
+  <option value="20+">20+</option>
+  <option value="30+">30+</option>
+
+
+  
+</select>
+
+<label for="Diploma">What diploma do you have?</label>
+<select id="Diploma" name="Diploma">
+  <option value="Apprenticeship">apprenticeship </option>
+  <option value="Bachelor's">Bachelor's</option>
+  <option value="Master">Master</option>
+  <option value="PHD">PHD</option>
+</select>
+
+
+
+<label for="What motivated you to become a web developer?">What motivated you to become a web developer?</label>
+<input type="text" id="motivation" name="motivation">
+
+<label for="back-end-frameworks">What do you consider to be your greatest strengths as a web developer?</label>
+<input type="text" id="back-end-frameworks" name="back-end-frameworks">
+
+<label for="cms">Can you walk us through your development process when creating a website or web application?</label>
+<input type="text" id="cms" name="cms">
+
+<label for="version-control">How do you stay up-to-date with the latest web development technologies and trends?</label>
+<input type="text" id="version-control" name="version-control">
+
+<label for="http-methods">Have you worked with any front-end or back-end frameworks? If so, which ones and what did you like/dislike about them?</label>
+<textarea id="http-methods" name="http-methods" rows="4" cols="50" required></textarea>
+
+<label for="api-tools">How do you ensure that the websites or web applications you develop are accessible and usable for all users?</label>
+<input type="text" id="api-tools" name="api-tools">
+ 
+<label for="cms">Can you explain the differences between HTTP and HTTPS? Why is HTTPS important for website security?</label>
+<input type="text" id="cms" name="cms">
+
+<label for="cms">Have you ever optimized a website's performance? If so, what tools or techniques did you use to achieve better performance?</label>
+<input type="text" id="cms" name="cms">
+
+<label for="cms">Have you ever collaborated with other developers or designers on a project? If so, how did you ensure that everyone was on the same page?</label>
+<input type="text" id="cms" name="cms">
+
+<label for="cms">How did you hear about us?</label>
+<input type="text" id="cms" name="cms">
+
+<label for="cms">Why us?</label>
+<input type="text" id="cms" name="cms">
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+
+
+<!-- customer submit button -->
+
+<label for="media" class="custom-file-upload">
+  <span><i class="fas fa-cloud-upload-alt"></i>Upload your CV</span>
+  <span class="file-name">No file chosen</span>
+</label>
+<input type="file" id="media" name="media" onchange="updateFileName()">
+
+<script>
+function updateFileName() {
+  const input = document.querySelector('#media');
+  const fileName = input.files[0].name;
+  const fileNameSpan = document.querySelector('.file-name');
+  fileNameSpan.textContent = fileName;
+}
+</script>
+
+
+
+  <!-- animated button -->
+
+<button class="animated-button" type="submit">Send Message</button>
+
+
+
+
+<label for="photo">Cant wait to work with you!</label>
+<img src="application.png" alt="Your Photo">
+</form>
+</body>
+</html>
+
+
+  <!-- Footer section -->
+  <footer>
+    <p>© 2023-2023 Hot Beans Web Development Company</p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
